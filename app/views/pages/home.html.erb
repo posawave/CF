@@ -2,4 +2,21 @@
     <h1>Welcome to Dev Match</h1>
     <p>A membership site</p>
 </div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="well">
+            <h2 class="text-center">Basic Membership</h2>
+            <p class="text-center">Sign up for free and get basic access</p>
+            <%= link_to "Sign up free", new_user_registration_path(plan: @basic_plan.id), class:"btn btn-primary btn-lg btn-block" %>
+        </div>
+    </div>
     
+    <div class="col-md-6">
+        <div class="well">
+            <h2 class="text-center">Pro Membership</h2>
+            <p class="text-center">Sign up for Prooooooooooooooo</p>
+            <%= link_to "Sign up Pro", new_user_registration_path(plan: @pro_plan.id), class:"btn btn-success btn-lg btn-block" %>
+        </div>
+    </div>
+</div>    
